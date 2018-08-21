@@ -1,0 +1,39 @@
+<idea-plugin>
+  <id>com.dylanfontaine.rider.monogameplugin</id>
+  <name>Plugin display name here</name>
+  <version>1.0</version>
+  <vendor email="dylanfontaine@live.ca" url="http://www.yourcompany.com">Dylan Fontaine</vendor>
+
+  <description><![CDATA[
+      Allows Rider to open the MonoGame Content Pipeline tool.
+    ]]></description>
+
+  <change-notes><![CDATA[
+
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <action id="OpenMonoGameContentPipeline"
+            class="com.dylanfontaine.rider.monogameplugin.OpenMonoGameContentPipelineAction"
+            text="Open MonoGame Content Pipeline"
+            description="Opens the MonoGame content pipeline tool">
+      <add-to-group group-id="ProjectViewPopupMenu" />
+      <keyboard-shortcut first-keystroke="alt shift B" keymap="$default" />
+    </action>
+  </actions>
+
+</idea-plugin>
