@@ -31,7 +31,7 @@
             class="com.dylanfontaine.rider.monogameplugin.OpenMonoGameContentPipelineAction"
             text="Open MonoGame Content Pipeline"
             description="Opens the MonoGame content pipeline tool">
-      <add-to-group group-id="ProjectViewPopupMenu" />
+      <add-to-group group-id="EditorActionsPopupMenu" />
       <keyboard-shortcut first-keystroke="alt shift B" keymap="$default" />
     </action>
   </actions>
