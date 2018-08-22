@@ -1,8 +1,8 @@
 <idea-plugin>
   <id>com.dylanfontaine.rider.monogameplugin</id>
-  <name>Plugin display name here</name>
+  <name>MonoGame</name>
   <version>1.0</version>
-  <vendor email="dylanfontaine@live.ca" url="http://www.yourcompany.com">Dylan Fontaine</vendor>
+  <vendor email="dylanfontaine@live.ca">Dylan Fontaine</vendor>
 
   <description><![CDATA[
       Allows Rider to open the MonoGame Content Pipeline tool.
@@ -31,7 +31,7 @@
             class="com.dylanfontaine.rider.monogameplugin.OpenMonoGameContentPipelineAction"
             text="Open MonoGame Content Pipeline"
             description="Opens the MonoGame content pipeline tool">
-      <add-to-group group-id="EditorActionsPopupMenu" />
+      <add-to-group group-id="ProjectViewPopupMenu" />
       <keyboard-shortcut first-keystroke="alt shift B" keymap="$default" />
     </action>
   </actions>
