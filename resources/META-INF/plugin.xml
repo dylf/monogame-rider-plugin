@@ -23,7 +23,9 @@
   -->
 
   <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
+    <applicationConfigurable id="Settings.MonoGame"
+                             instance="com.dylanfontaine.rider.monogameplugin.MonoGameConfigurable"
+                             groupId="language" />
   </extensions>
 
   <actions>
